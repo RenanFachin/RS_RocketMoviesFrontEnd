@@ -5,6 +5,7 @@ export default {
       BACKGROUND_COLOR_800: "#3E3B47",
       BACKGROUND_COLOR_700: "#262529",
       BACKGROUND_COLOR_TAGS: "#312E38",
+      BACKGROUND_COLOR_TAGS2: "#282124",
       PINK: "#FF859B",
 
       // Cor do SVG

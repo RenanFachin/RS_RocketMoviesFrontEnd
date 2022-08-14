@@ -20,7 +20,7 @@ export function Details (){
 
                 <ButtonText title="Voltar" />
 
-                <div>
+                 <div>
                 <h1>Interestellar</h1>
                 <Star/>
                 </div>
@@ -35,8 +35,7 @@ export function Details (){
                 <Section>
                     <Tag title="Ficção Científica" />
                     <Tag title="Drama" />
-                    <Tag title="Drama" />
-                    <Tag title="Drama" />
+                    <Tag title="Família" />
                 </Section>
 
                 <p>

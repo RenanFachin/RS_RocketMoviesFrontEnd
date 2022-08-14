@@ -41,7 +41,7 @@ export const Profile = styled.div`
 
             margin-right: 20px;
             line-height: 18px;
-            gap: 3px;
+            gap: 5px;
 
             strong {
                 font-size: 16px;
