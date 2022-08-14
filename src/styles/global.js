@@ -20,6 +20,7 @@ export default createGlobalStyle`
         outline: none;
     }
 
+
     a{
         text-decoration: none;
     }
