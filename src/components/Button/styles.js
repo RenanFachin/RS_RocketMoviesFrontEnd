@@ -11,10 +11,18 @@ export const Container = styled.button`
     margin-top: 16px;
     border-radius: 10px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
 
     font-weight: 500;
 
     &:disabled{
         opacity: 0.5;
+    }
+
+    > svg{
     }
 `; 

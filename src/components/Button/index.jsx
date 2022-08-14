@@ -9,13 +9,14 @@ import { Container } from './styles'
 // loading = false é o valor padrão, caso não seja informado como propriedade 
 
 // ...rest é para não ficar falando todas as propriedades que o botão possui
-export function Button({title, loading = false, ...rest}){
+export function Button({title, loading = false, icon:Icon, ...rest}){
     return(
         <Container 
             type="button"
             disabled={loading}
             {...rest}
         >
+            {Icon && <Icon size={16} />}
             {loading ? 'Carregando...' : title}
         </Container>
     )
