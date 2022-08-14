@@ -9,7 +9,9 @@ export function Details (){
         <h1>Hello World!!</h1>
         <span>RocketMovie</span>
 
-        <Button />
+        <Button title="Teste 1" />
+        <Button title="Teste 2" />
+        <Button title="Teste 3" />
         </Container>
     )
 }
