@@ -13,6 +13,7 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 62px;
 
     padding: 24px 123px;
 
@@ -23,6 +24,7 @@ export const Container = styled.header`
             line-height: 32px;
             letter-spacing: 1px;
         }
+    
 `;
 
 export const Profile = styled.div`
@@ -36,19 +38,19 @@ export const Profile = styled.div`
         }
 
         > div {
-            display: flex;
-            flex-direction:column;
+            width: 200px;
 
             margin-right: 20px;
             line-height: 18px;
-            gap: 5px;
 
             strong {
                 font-size: 16px;
                 font-weight: 700;
-                letter-spacing: 0.5px;
                 color: ${({theme})=> theme.COLORS.TEXT_NOTES};
                 text-transform: uppercase;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 5px;
             }
 
             span {

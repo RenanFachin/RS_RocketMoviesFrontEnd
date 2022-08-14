@@ -6,6 +6,7 @@ import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
 import { Button } from '../../components/Button'
 
+
 export function Home(){
     return(
         <Container>
