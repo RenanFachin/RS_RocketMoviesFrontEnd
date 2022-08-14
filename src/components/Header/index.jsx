@@ -14,10 +14,10 @@ export function Header(){
 
             </div>  
 
-                <img 
+            <img 
                 src="https://github.com/RenanFachin.png" 
                 alt="Foto do usuário" 
-                />
+            />
 
             </Profile>
 
