@@ -1,17 +1,13 @@
 import { Container } from './styles'
 
 import { Button } from '../../components/Button' // importando o componente de button
+import { Header } from '../../components/Header' // importando o componente de Header
 
 export function Details (){
 
     return(
         <Container>
-        <h1>Hello World!!</h1>
-        <span>RocketMovie</span>
-
-        <Button title="Teste 1" />
-        <Button title="Teste 2" />
-        <Button title="Teste 3" />
+            <Header />
         </Container>
     )
 }
