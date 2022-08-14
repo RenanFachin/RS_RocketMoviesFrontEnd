@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-
-    margin-top: 50px;
-    padding-left: 123px;
+      margin-bottom: 40px;
 
      >h2 {
         font-size: 32px;
@@ -11,6 +9,5 @@ export const Container = styled.section`
         font-weight: 400;
         color: ${({theme}) => theme.COLORS.WHITE};
 
-        margin-bottom: 40px;
      }
 `;
