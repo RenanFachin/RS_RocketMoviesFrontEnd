@@ -15,6 +15,17 @@ export const Container = styled.div`
         grid-area: content;
     }
 
+    .tags{
+    display: flex;
+    justify-content: left; 
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    gap:24px;
+    margin-bottom: 40px;
+ }
+
 `;
 
 export const Form = styled.form`

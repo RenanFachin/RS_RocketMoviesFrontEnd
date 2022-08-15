@@ -6,6 +6,8 @@ import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { TextArea } from '../../components/TextArea'
+import { NoteItem } from '../../components/NoteItem'
+import { Section } from '../../components/Section'
 
 export function New(){
     return(
@@ -26,6 +28,12 @@ export function New(){
                     </div>
 
                     <TextArea placeholder = "Observações" />
+
+                    <Section title="Marcadores"></Section>
+                    <div className = "tags">
+                            <NoteItem value="React"/>
+                            <NoteItem value="" isNew />
+                    </div>
 
                 </Form>
             </main>
