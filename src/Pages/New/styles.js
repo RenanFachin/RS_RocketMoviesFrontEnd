@@ -56,6 +56,21 @@ export const Form = styled.form`
         align-items: left;
         flex-direction: column;
         margin-bottom: 40px;
+        text-decoration: none;
+
+        >div{
+            display: flex;
+            align-items: center;
+            color: ${({theme})=> theme.COLORS.PINK};
+            margin-bottom: 24px;
+            font-size: 16px;
+            gap: 8px;
+
+            > a {
+                text-decoration: none;
+                color: ${({theme})=> theme.COLORS.PINK};
+            }
+        }
 
         > h1 {
             color: ${({theme}) => theme.COLORS.TEXT_NOTES};

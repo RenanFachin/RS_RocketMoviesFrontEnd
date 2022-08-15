@@ -7,6 +7,8 @@ import { Section } from '../../components/Section'
 import { Button } from '../../components/Button'
 import { Note } from '../../components/Note'
 
+import { Link } from 'react-router-dom';
+
 
 export function Home(){
     return(
@@ -16,7 +18,7 @@ export function Home(){
             <Content>
                 <div>
                     <Section title="Meus Filmes"/>
-                    <Button title="Adicionar nota" icon={FiPlus}></Button>
+                    <Link to="/new"><Button title="Adicionar nota" icon={FiPlus}></Button></Link>
                 </div>
 
                 <Note data={{

@@ -16,7 +16,6 @@ export const Container = styled.div`
             overflow-y: auto;
             padding: 40px 123px;
 
-
             p {
                 text-align: justify;
                 line-height: 21px;
@@ -34,6 +33,21 @@ export const Content = styled.div`
     flex-direction: column;
 
     overflow-y: auto;
+
+    > div.returnButton {
+            display: flex;
+            align-items: center;
+            color: ${({theme})=> theme.COLORS.PINK};
+            margin-bottom: 24px;
+            font-size: 16px;
+            gap: 8px;
+
+            > a {
+                text-decoration: none;
+                color: ${({theme})=> theme.COLORS.PINK};
+            }
+    }
+
     
     > div {
         display: flex;

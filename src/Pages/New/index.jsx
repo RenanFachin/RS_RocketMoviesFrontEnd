@@ -3,12 +3,13 @@ import { Container, Form } from './styles'
 import { FiArrowLeft } from 'react-icons/fi'
 
 import { Header } from '../../components/Header'
-import { ButtonText } from '../../components/ButtonText'
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
 import { TextArea } from '../../components/TextArea'
 import { NoteItem } from '../../components/NoteItem'
 import { Section } from '../../components/Section'
+
+import { Link } from 'react-router-dom'
 
 export function New(){
     return(
@@ -18,8 +19,12 @@ export function New(){
             <main>
                 <Form>
                     <header>
-                    <ButtonText title="Voltar" icon={FiArrowLeft}/>
+                        <div>
+                            <FiArrowLeft />
+                            <Link to="/">Voltar</Link>
+                        </div>
 
+                    {/* <ButtonText title="Voltar" icon={FiArrowLeft}/> */}
                     <h1>Novo filme</h1>  
                     </header>
 

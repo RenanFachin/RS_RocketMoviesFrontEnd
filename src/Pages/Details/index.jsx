@@ -5,10 +5,10 @@ import { FiArrowLeft } from 'react-icons/Fi'
 import { Header } from '../../components/Header' // importando o componente de Header
 import { Section } from '../../components/Section' // importando o componente de section
 import { Tag } from '../../components/Tag' // importando o componente de Tag
-import { ButtonText } from '../../components/ButtonText' // importando o componente de ButtonText
 import { Star } from '../../components/Star' // importando o componente de Star
 
-
+import { Link } from 'react-router-dom'
+ 
 export function Details (){
 
     return(
@@ -18,7 +18,10 @@ export function Details (){
             <main>
                 <Content>
 
-                <ButtonText title="Voltar" icon={FiArrowLeft} />
+                <div className='returnButton'>
+                <FiArrowLeft />
+                <Link to="/">Voltar</Link>
+                </div>
 
                 <div>
                 <h1>Interestellar</h1>

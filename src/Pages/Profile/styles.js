@@ -7,9 +7,22 @@ export const Container = styled.div`
         width: 100%;
         height: 144px;
         background: rgba(255, 133, 155, 0.05);
+        display: flex;
+        align-items: center;
+        padding: 64px 0 59px 144px;
+        color: ${({theme})=> theme.COLORS.PINK};
+        font-size: 16px;
+        gap: 8px;
+        
+        > a{
+            font-size: 16px;
+            text-decoration: none;
+            color: ${({theme})=> theme.COLORS.PINK};
+        }
 
-        > button{
-            padding: 64px 0 59px 144px;
+        svg {
+            color: ${({theme})=> theme.COLORS.PINK};
+            font-size: 16px;
         }
     }
 `;

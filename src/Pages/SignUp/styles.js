@@ -40,7 +40,7 @@ export const Form = styled.form`
             margin-bottom: 40px;
         }
 
-    > Button:last-child {
+    > .returnButton {
         margin-top: 42px;
         display: flex;
         justify-content: center;
