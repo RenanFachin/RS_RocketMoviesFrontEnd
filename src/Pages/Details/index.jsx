@@ -20,7 +20,7 @@ export function Details (){
 
                 <ButtonText title="Voltar" icon={FiArrowLeft} />
 
-                 <div>
+                <div>
                 <h1>Interestellar</h1>
                 <Star/>
                 </div>
