@@ -16,6 +16,7 @@ export default {
       WHITE: "#FFFFFF",
       TEXT_INPUT: "#948F99",
       GRAY: "#999591",
+      GRAY_100: "#CACACF",
       TEXT_TAGS: "#E5E5E5",
       TEXT_NOTES: "#F4EDE8",
       TEXT_BUTTON: "#312E38",

@@ -9,6 +9,7 @@ export const Container = styled.div`
     color: ${({theme}) => theme.COLORS.TEXT_INPUT};
 
     border-radius: 10px;
+    margin-top: 8px;
 
     svg {
     margin-left: 12px;

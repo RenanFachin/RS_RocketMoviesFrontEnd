@@ -9,7 +9,11 @@ export function Header(){
         <Container>
             <h2>RocketMovies</h2>
 
-            <Input placeholder = "Pesquisar pelo título" icon = {FiSearch} />
+            <Input 
+            placeholder = "Pesquisar pelo título" 
+            type = "text" 
+            icon = {FiSearch} 
+            />
             
             <Profile>  
             <div>
