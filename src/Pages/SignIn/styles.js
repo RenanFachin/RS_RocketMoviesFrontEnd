@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-    padding: 0 134px;
+    padding: 0 161px 0 131px;
 
     display: flex;
     flex-direction: column;

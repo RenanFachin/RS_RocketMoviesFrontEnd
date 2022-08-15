@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import backgroundIMG from '../../assets/BackgroundImg.png'
 
 export const Container = styled.form`
     height: 100vh;
@@ -7,7 +8,7 @@ export const Container = styled.form`
 `;
 
 export const Form = styled.form`
-    padding: 0 134px;
+    padding: 0 161px 0 131px;
 
     display: flex;
     flex-direction: column;
@@ -46,4 +47,11 @@ export const Form = styled.form`
     }
 
 
+`;
+
+
+export const Background = styled.div`
+    flex: 1;
+    background: url(${backgroundIMG}) no-repeat center center;
+    background-size: cover;
 `;

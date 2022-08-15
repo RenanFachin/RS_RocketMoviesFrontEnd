@@ -1,4 +1,4 @@
-import { Container, Form } from './styles'
+import { Container, Form, Background } from './styles'
 import { FiUser, FiMail, FiLock } from 'react-icons/fi'
 import { FiArrowLeft } from 'react-icons/Fi'
 
@@ -38,7 +38,7 @@ export function SignUp(){
         <ButtonText title="Voltar para o login"  icon={FiArrowLeft} />
 
         </Form>
-
+        <Background />
         </Container>
     )
 }
