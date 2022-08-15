@@ -8,6 +8,6 @@ export const Container = styled.span`
 
     font-family: 'Roboto', sans-serif;
     color: ${({theme})=>theme.COLORS.TEXT_TAGS};
-    background-color: ${({theme})=>theme.COLORS.BACKGROUND_COLOR_TAGS2};
+    background-color: ${({theme})=>theme.COLORS.BACKGROUND_COLOR_TAGS};
 
 `;

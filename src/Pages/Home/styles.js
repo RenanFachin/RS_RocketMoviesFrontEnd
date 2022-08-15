@@ -16,6 +16,8 @@ export const Content = styled.div`
     grid-area: "content";
     padding: 50px 123px;
 
+    overflow-y: auto;
+
     > div {
         display: flex;
         align-items: center;
@@ -33,6 +35,8 @@ export const Content = styled.div`
         }
 
     }
+
+
 
 
 `;
