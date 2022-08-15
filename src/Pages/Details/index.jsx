@@ -1,7 +1,7 @@
 import { Container, Content } from './styles'
 import { BiTime } from 'react-icons/bi'
+import { FiArrowLeft } from 'react-icons/Fi'
 
-import { Button } from '../../components/Button' // importando o componente de button
 import { Header } from '../../components/Header' // importando o componente de Header
 import { Section } from '../../components/Section' // importando o componente de section
 import { Tag } from '../../components/Tag' // importando o componente de Tag

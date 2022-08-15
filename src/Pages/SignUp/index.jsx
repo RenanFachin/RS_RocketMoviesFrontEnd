@@ -29,8 +29,8 @@ export function SignUp(){
         />
 
         <Input 
-            placeholder = "E-mail"
-            type = "text" 
+            placeholder = "Senha"
+            type = "password" 
             icon = { FiLock } 
         />      
 
