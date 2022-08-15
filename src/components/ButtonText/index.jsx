@@ -1,10 +1,11 @@
 import { Container } from './styles'
-import { FiArrowLeft } from 'react-icons/Fi'
 
-export function ButtonText({title, ...rest}){
+export function ButtonText({title, icon:Icon, ...rest}){
     return(
-        <Container type="button" {...rest}>
-            <FiArrowLeft />
+        <Container 
+        type="button" {...rest}
+        >
+            {Icon && <Icon size={20} />}
             {title}
         </Container>
     )
