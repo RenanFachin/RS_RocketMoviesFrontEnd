@@ -13,17 +13,36 @@ export const Container = styled.div`
 
     > main {
         grid-area: content;
+        overflow-y: auto;
+
+        .titleAndRating{
+        display: flex;
+        gap: 40px;
+        }
+
+        .buttonsLine{
+        display: flex;
+        gap: 40px;
+        }
+
+        .darkButton{
+            background-color: ${({theme}) => theme.COLORS.BACKGROUND_INPUT};
+            color: ${({theme}) => theme.COLORS.PINK};
+        }
+       
     }
 
     .tags{
     display: flex;
     justify-content: left; 
     flex-wrap: wrap;
-    background-color: black;
-    padding: 20px;
+    background-color: #0D0C0F;
+    padding: 16px;
     border-radius: 8px;
-    gap:24px;
-    margin-bottom: 40px;
+    gap: 24px;
+    margin-top: 24px;
+
+
  }
 
 `;
