@@ -10,6 +10,8 @@
 Desenvolvimento das páginas de front-end para a aplicação RocketMovies. O projeto está sendo desenvolvido durante o desafio do stage 09 do programa Explorer.
 Futuramente estas páginas serão anexadas junto ao back-end para que seja uma aplicação completa.
 
+<img src="https://i.imgur.com/1fbULZS.jpg">
+
 <br>
 <h3 align="center">Desenvolvido em: </h3>
 <div align="center">
@@ -22,6 +24,11 @@ Futuramente estas páginas serão anexadas junto ao back-end para que seja uma a
 ## 🎯 Funcionalidades
 
 - Página de login de usuário;
+- Página de perfil do usuário;
+- Página para criaçao de usuário;
+- Página Home;
+- Página de Preview da nota cadastrada;
+- Página da criação de uma nota
 
 
 #
