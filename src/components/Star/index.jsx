@@ -1,5 +1,5 @@
 import { Container } from './style'
-import { AiFillStar, AiOutlineStar } from 'react-icons/Ai'
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
 export function Star(){
     return(

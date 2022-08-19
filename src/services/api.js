@@ -7,4 +7,3 @@ export const api = axios.create({
     baseURL: "http://localhost:3333"
     // endereço do backend, para não precisar repetir em todas as requisições
 })
-

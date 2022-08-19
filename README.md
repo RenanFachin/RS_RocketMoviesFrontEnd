@@ -39,6 +39,7 @@ Futuramente estas páginas serão anexadas junto ao back-end para que seja uma a
   - CSS-in-JS: `Styled-components`
   - Biblioteca de ícones: `react-icons`
   - Lib de navegação do projeto: `react-router-dom`
+  - Lib para trabalhar com requisições HTTP: `Axios`
  #
 <br>
 

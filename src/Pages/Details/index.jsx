@@ -1,6 +1,6 @@
 import { Container, Content } from './styles'
 import { BiTime } from 'react-icons/bi'
-import { FiArrowLeft } from 'react-icons/Fi'
+import { FiArrowLeft } from 'react-icons/fi'
 
 import { Header } from '../../components/Header' // importando o componente de Header
 import { Section } from '../../components/Section' // importando o componente de section

@@ -3,52 +3,39 @@ import backgroundIMG from '../../assets/BackgroundImg.png'
 
 export const Container = styled.form`
     height: 100vh;
-
+    align-items: stretch;
     display: flex;
 `;
 
 export const Form = styled.form`
-    padding: 0 161px 0 131px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    text-align: left;
-
-
-        > h1 {
-            color: ${({theme})=> theme.COLORS.PINK};
-            font-size: 48px;
-            line-height: 64px;
-            font-weight: 700;
-        }
-
-        > p {
-            color: ${({theme})=> theme.COLORS.GRAY_100};
-            font-size: 14px;
-            line-height: 16px;
-            font-weight: 400;
-            margin-bottom: 48px;
-        }
-
-        > h2 {
-            color: ${({theme})=> theme.COLORS.TEXT_NOTES};
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 500;
-            margin-bottom: 40px;
-        }
-
-    > .returnButton {
-        margin-top: 42px;
-        display: flex;
-        justify-content: center;
-    }
-
-
-`;
-
+padding: 0 136px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+text-align: left;
+>h1{
+  font-size: 48px;
+  color: ${({ theme }) => theme.COLORS.PINK};
+}
+>h2{
+  font-size: 24px;
+  margin: 48px 0;
+  
+}
+>p{
+  font-size: 14px;
+  color: ${({ theme }) => theme.COLORS.GRAY_100};
+  
+}
+>a{
+  margin-top: 42px;
+  color: ${({ theme }) => theme.COLORS.PINK};
+  justify-content: center;
+  align-items: center;
+  display: flex;
+};
+`
 
 export const Background = styled.div`
     flex: 1;
