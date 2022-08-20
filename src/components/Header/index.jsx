@@ -1,10 +1,14 @@
 import { RiShutDownLine } from 'react-icons/ri'
 import { FiSearch } from 'react-icons/fi'
-import { Container, Profile } from './styles'
+import { Container, Profile, Content } from './styles'
+
+import { useAuth } from '../../hooks/auth'
 
 import { Input } from '../../components/Input'
 
 export function Header(){
+    const { signOut } = useAuth();
+    
     return(
         <Container>
             <h2>RocketMovies</h2>
@@ -15,18 +19,21 @@ export function Header(){
             icon = {FiSearch} 
             />
             
-            <Profile to="/profile">  
-            <div>
-                <strong>Renan Fachin</strong>
-                <span>sair <RiShutDownLine /></span>
-            </div>  
+            <Profile>  
+                <div>
+                    <strong>Renan Fachin</strong>
+                    <button onClick={signOut}> Sair <RiShutDownLine /> </button>
+                </div>  
 
-            <img 
-                src="https://github.com/RenanFachin.png" 
-                alt="Foto do usuário" 
-            />
+                </Profile>
+                
+                <Content to="/profile">
+                    <img 
+                        src="https://github.com/RenanFachin.png" 
+                        alt="Foto do usuário" 
+                    />
+                </Content>
 
-            </Profile>
 
 
 
