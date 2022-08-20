@@ -1,5 +1,5 @@
 // Importando do react
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 // Importando a API
 import {api} from '../services/api'
@@ -9,11 +9,20 @@ export const AuthContext = createContext({});
 
 // O children vai ser as rotas da aplicação (lá do main). é o filho do authContext
 function AuthProvider({ children }){
+    const [data, setData] = useState({});
+
     async function signIn({email, password}){
+
         try{
-            const response = await api.post("/sessions", {email, password})
-            console.log(response)
-        }catch(error){
+            const response = await api.post("/sessions", {email, password});
+
+            const { user, token } = response.data;
+
+            api.defaults.headers.common['Authorization'] = `Bear ${token}`;
+
+            setData({user,token})
+
+        } catch(error){
             if(error.response){
                 alert(error.response.data.message)
             } else {
@@ -22,7 +31,7 @@ function AuthProvider({ children }){
         }
     }
     return (
-        <AuthContext.Provider value={{ signIn }}>
+        <AuthContext.Provider value={{ signIn, user: data.user }}>
             {children}
         </AuthContext.Provider>
     )

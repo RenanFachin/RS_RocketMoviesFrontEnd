@@ -20,11 +20,12 @@ export function SignUp(){
     function handleSignUp(){
         if(!name || !email || !password){
             return alert("Preencha todos os campos!")
-            navigate("/")
+
         }
         api.post("/users", { name, email, password})
         .then(()=>{
             alert("Usuário cadastrado com sucesso!")
+            navigate("/")
         }) 
         .catch(error => {
             if(error.response){
