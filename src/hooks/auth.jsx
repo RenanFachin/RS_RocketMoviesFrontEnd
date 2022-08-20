@@ -1,5 +1,5 @@
 // Importando do react
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 // Importando a API
 import {api} from '../services/api'
@@ -18,8 +18,10 @@ function AuthProvider({ children }){
 
             const { user, token } = response.data;
 
-            api.defaults.headers.common['Authorization'] = `Bear ${token}`;
+            localStorage.setItem("@rocketnotes:user",JSON.stringify(user))
+            localStorage.setItem("@rocketnotes:token", token)
 
+            api.defaults.headers.common['Authorization'] = `Bear ${token}`;
             setData({user,token})
 
         } catch(error){
@@ -30,6 +32,25 @@ function AuthProvider({ children }){
             }
         }
     }
+
+    useEffect(()=> {
+        // usar exatamente a mesma chave
+        const token = localStorage.getItem("@rocketnotes:token")
+        const user = localStorage.getItem("@rocketnotes:user")
+
+        // if para garantir que ambos dados tenham sido informados
+        if(token && user){
+            api.defaults.headers.common['Authorization'] = `Bear ${token}`;
+
+            setData({
+                token,
+                // Voltando o formato de texto para objeto do tipo json
+                user: JSON.parse(user),
+            });
+        }
+
+    }, [])
+
     return (
         <AuthContext.Provider value={{ signIn, user: data.user }}>
             {children}
