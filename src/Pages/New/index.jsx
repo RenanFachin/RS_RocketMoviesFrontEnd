@@ -1,5 +1,5 @@
 import { Container, Form } from './styles'
-
+import { useState } from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 
 import { Header } from '../../components/Header'
@@ -12,6 +12,20 @@ import { Section } from '../../components/Section'
 import { Link } from 'react-router-dom'
 
 export function New(){
+    const [tags, setTags] = useState([])
+    const [newTag, setNewTag] = useState("")
+
+    function handleAddTag(){
+        setTags(prevState => [...prevState,newTag]);
+
+        setNewTag("")
+    }
+
+    function handleRemoveTag(deleted){
+        // Trás todas as tags menos a deletada e retorna uma novo objeto
+        setTags(prevState => prevState.filter(tag => tag !==deleted));
+    }
+
     return(
         <Container>
             <Header />
@@ -37,8 +51,25 @@ export function New(){
 
                     <Section title="Marcadores">
                     <div className = "tags">
-                        <NoteItem value="React"/>
-                        <NoteItem placeholder="Novo marcador" isNew />
+
+                        {
+                            tags.map((tag,index) => (
+                                <NoteItem
+                                key={String(index)}
+                                value={tag}
+                                onClick={()=>{handleRemoveTag(tag)}}
+                                />
+                            ))                            
+                        }
+
+                    <NoteItem 
+                    placeholder="Novo marcador" 
+                    isNew 
+                    onChange= {e => setNewTag(e.target.value)}
+                    value={newTag}
+                    onClick={handleAddTag}
+                    />
+
                     </div>
                     </Section>
                     
