@@ -6,8 +6,13 @@ import { useAuth } from '../../hooks/auth'
 
 import { Input } from '../../components/Input'
 
+import { api } from '../../services/api'
+import avatarPlaceholder from '../../assets/avatar_placeholder.svg'
+
 export function Header(){
-    const { signOut } = useAuth();
+    const { signOut, user } = useAuth();
+
+    const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
     
     return(
         <Container>
@@ -21,7 +26,7 @@ export function Header(){
             
             <Profile>  
                 <div>
-                    <strong>Renan Fachin</strong>
+                    <strong>{user.name}</strong>
                     <button onClick={signOut}> Sair <RiShutDownLine /> </button>
                 </div>  
 
