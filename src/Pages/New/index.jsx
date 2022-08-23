@@ -33,6 +33,19 @@ export function New(){
     }
 
     async function handleNewNote(){
+
+        if(!title){
+            return alert("Digite o título da nota!")
+        }
+
+        if(!rating){
+            return alert("Digite uma nota ao filme cadastrado")
+        }
+
+        if(newTag){
+            return alert ("Você deixou uma tag no campo e não adicionou")
+        }
+
         await api.post("/notes", {
             title,
             description,
