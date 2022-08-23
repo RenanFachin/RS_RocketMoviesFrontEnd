@@ -51,10 +51,20 @@ export function New(){
             description,
             rating,
             tags
+        }).then(()=>{
+            alert("Nota cadastrada com sucesso!!")
+            navigate("/")
+        })
+        .catch(error => {
+            if(error.response){
+                alert(error.response.data.message);
+            }else{
+                alert("Não foi possível cadastrar")
+            }
         })
 
-        alert("Nota cadastrada com sucesso!!")
-        navigate("/")
+        // alert("Nota cadastrada com sucesso!!")
+        // navigate("/")
     }
 
     return(
