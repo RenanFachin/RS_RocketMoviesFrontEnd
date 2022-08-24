@@ -5,7 +5,7 @@ import { FiArrowLeft } from 'react-icons/fi'
 import { Header } from '../../components/Header' // importando o componente de Header
 import { Section } from '../../components/Section' // importando o componente de section
 import { Tag } from '../../components/Tag' // importando o componente de Tag
-import { Star } from '../../components/Star' // importando o componente de Star
+// import { Star } from '../../components/Star' // importando o componente de Star
 
 import { Link } from 'react-router-dom'
  
@@ -25,7 +25,6 @@ export function Details (){
 
                 <div>
                 <h1>Interestellar</h1>
-                <Star/>
                 </div>
 
                 <div className='publicationStats'>

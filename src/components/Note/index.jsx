@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import { Star } from '../../components/Star'
+import { Ratings } from '../Ratings'
 import { Tag } from '../../components/Tag'
 
 export function Note({data, ...rest}){
@@ -8,7 +8,7 @@ export function Note({data, ...rest}){
             <h1>{data.title}</h1>
             
             <header>
-                <Star/>
+            <Ratings rating={data.rating}/>
             </header>
 
             <p>{data.text}</p>
