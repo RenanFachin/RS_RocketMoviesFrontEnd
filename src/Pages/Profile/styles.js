@@ -14,8 +14,13 @@ export const Container = styled.div`
         font-size: 16px;
         gap: 8px;
         
-        > a{
-            font-size: 16px;
+        > button{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 17px;
+            border: none;
+            background: none;
             text-decoration: none;
             color: ${({theme})=> theme.COLORS.PINK};
         }

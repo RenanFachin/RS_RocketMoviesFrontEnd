@@ -1,12 +1,15 @@
-import { Container, Content } from './styles'
+import { Container, Content, UsersInfo, Profile } from './styles'
 import { BiTime } from 'react-icons/bi'
 import { FiArrowLeft } from 'react-icons/fi'
+import { RiShutDownLine } from 'react-icons/ri'
 
 import { Ratings } from "../../components/Ratings";
 import { ButtonText } from "../../components/ButtonText";
 import { Header } from '../../components/Header' // importando o componente de Header
 import { Section } from '../../components/Section' // importando o componente de section
 import { Tag } from '../../components/Tag' // importando o componente de Tag
+import { Input } from '../../components/Input'
+
 
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -51,7 +54,27 @@ export function Details (){
 
     return(
         <Container>
-            <Header />
+            {/* <Header /> */}
+            <header>
+            <h2>RocketMovies</h2>
+
+            <div className='UserInfos'>
+            <Profile>  
+                <div>
+                    <strong>{user.name}</strong>
+                </div>  
+            </Profile>
+
+
+            <UsersInfo to="/profile">
+                <img 
+                    src={avatarUrl} 
+                    alt="Foto do usuário" 
+                />
+            </UsersInfo>
+            </div>
+            </header>
+
         { 
         data && (
             <main>
