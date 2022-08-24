@@ -4,6 +4,7 @@
 <br>
 <div align="center">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RenanFachin/RS_RocketMoviesFrontEnd?color=%23725CED&style=flat-square">
+ </div>
 
 
 # ROCKET MOVIES
@@ -60,10 +61,10 @@ $ npm run dev
 
 ## ✔️ Autores
 
-- [Renan Fachin](https://github.com/RenanFachin/)
+[Renan Fachin](https://github.com/RenanFachin/)
 
 ## 📄 Referência
 
-- [Rockeseat](https://www.rocketseat.com.br/)
+[Rockeseat](https://www.rocketseat.com.br/)
 
 
