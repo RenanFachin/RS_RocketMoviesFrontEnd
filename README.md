@@ -14,7 +14,7 @@
 Desenvolvimento das páginas de front-end para a aplicação RocketMovies. O projeto está sendo desenvolvido durante o desafio do stage 09 do programa Explorer.
 Futuramente estas páginas serão anexadas junto ao back-end para que seja uma aplicação completa.
 
-Para acessar a aplicação: <a href="https://rocketmovies182.netlify.app/" target="_blank"></a>
+Para acessar a aplicação: <a href="https://rocketmovies182.netlify.app/" target="_blank">ROCKETMOVIES</a>
 
 
 <img src="https://i.imgur.com/1fbULZS.jpg">
@@ -52,8 +52,6 @@ Para acessar a aplicação: <a href="https://rocketmovies182.netlify.app/" targe
 ### 💻 Programas utilizados para teste e desenvolvimento
   `VsCode`
 #
-<br>
-<br>
 
 ### Setup
 
