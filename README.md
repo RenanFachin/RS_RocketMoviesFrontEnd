@@ -49,16 +49,6 @@ Para acessar a aplicação: <a href="https://rocketmovies182.netlify.app/" targe
   `VsCode`
 #
 
-### Setup
-
-```bash
-# Instale as dependências
-$ npm install
-
-# Rode o servidor
-$ npm run dev
-```
-
 ## ✔️ Autores
 
 [Renan Fachin](https://github.com/RenanFachin/)
