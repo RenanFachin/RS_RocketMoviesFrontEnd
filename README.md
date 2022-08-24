@@ -4,11 +4,17 @@
 <br>
 <div align="center">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RenanFachin/RS_RocketMoviesFrontEnd?color=%23725CED&style=flat-square">
+  
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/1922ff70-1b0f-4e87-8f21-e6af71c595af/deploy-status)](https://app.netlify.com/sites/rocketmovies182/deploys)
 </div>
+
+
 
 # ROCKET MOVIES
 Desenvolvimento das páginas de front-end para a aplicação RocketMovies. O projeto está sendo desenvolvido durante o desafio do stage 09 do programa Explorer.
 Futuramente estas páginas serão anexadas junto ao back-end para que seja uma aplicação completa.
+
+Para acessar a aplicação: <a href="https://rocketmovies182.netlify.app/" target="_blank"></a>
 
 
 <img src="https://i.imgur.com/1fbULZS.jpg">
@@ -48,6 +54,16 @@ Futuramente estas páginas serão anexadas junto ao back-end para que seja uma a
 #
 <br>
 <br>
+
+### Setup
+
+```bash
+# Instale as dependências
+$ npm install
+
+# Rode o servidor
+$ npm run dev
+```
 
 ## ✔️ Autores
 
