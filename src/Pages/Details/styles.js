@@ -37,10 +37,21 @@ export const Content = styled.div`
     > div.returnButton {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             color: ${({theme})=> theme.COLORS.PINK};
             margin-bottom: 24px;
             font-size: 16px;
             gap: 8px;
+
+            > button{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 16px;
+                background: none;
+                border: none;
+                color: ${({theme}) => theme.COLORS.PINK};
+            }
 
             > a {
                 text-decoration: none;
@@ -69,18 +80,37 @@ export const Content = styled.div`
         display: flex;
         gap: 8px;
 
-        margin-top: 24px;
-        margin-bottom: 40px;
+        margin-top: 8px;
+        margin-bottom: 24px;
         
         > img {
-            width: 20px;
-            height: 20px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
+        }
+
+        > span {
+            color: ${({theme}) => theme.COLORS.GRAY_100}
         }
 
         > svg {
             font-size: 20px;
             color: ${({theme}) => theme.COLORS.PINK}
+        }
+
+        .publicationDateAndHour{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            >span {
+                color: ${({theme}) => theme.COLORS.GRAY_100}
+            }
+
+            > svg{
+                font-size: 24px;
+                color: ${({theme}) => theme.COLORS.PINK}
+            }
         }
     }
 `;

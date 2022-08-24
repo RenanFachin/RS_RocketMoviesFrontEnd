@@ -9,6 +9,7 @@ import { Button } from '../../components/Button'
 import { Note } from '../../components/Note'
 import { Input } from '../../components/Input'
 
+
 import { Link } from 'react-router-dom';
 import { api } from '../../services/api'
 import { useAuth } from '../../hooks/auth'
@@ -27,8 +28,8 @@ export function Home(){
     const [movies, setMovies] = useState([]);
 
     function handleDetails(id){
-        navigate(`/details/${id}`)
-    }
+        navigate(`/details/${id}`);
+      }
 
     useEffect(() => {
         async function fetchMovieNotes() {
