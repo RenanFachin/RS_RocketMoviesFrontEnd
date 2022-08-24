@@ -4,10 +4,6 @@
 <br>
 <div align="center">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RenanFachin/RS_RocketMoviesFrontEnd?color=%23725CED&style=flat-square">
-  
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/1922ff70-1b0f-4e87-8f21-e6af71c595af/deploy-status)](https://app.netlify.com/sites/rocketmovies182/deploys)
-</div>
-
 
 
 # ROCKET MOVIES
@@ -46,8 +42,7 @@ Para acessar a aplicação: <a href="https://rocketmovies182.netlify.app/" targe
   - Biblioteca de ícones: `react-icons`
   - Lib de navegação do projeto: `react-router-dom`
   - Lib para trabalhar com requisições HTTP: `Axios`
- #
-<br>
+#
 
 ### 💻 Programas utilizados para teste e desenvolvimento
   `VsCode`
